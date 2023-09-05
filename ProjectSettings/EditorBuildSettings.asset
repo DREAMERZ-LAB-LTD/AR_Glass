@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GlassAR.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/3D Gallary.unity
+    guid: a7fc2c54e3d13c4409f4653ca482687b
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: cc48e4138b9002c41a6b5dc4f8b8d241, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: d8062d019ce86bd4581ce1efdbe877ed, type: 2}
