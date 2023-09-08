@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/UI.unity
+    guid: 21d0b883695a251418c7505267b63059
+  - enabled: 1
     path: Assets/Scenes/GlassAR.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/3D Gallary.unity
     guid: a7fc2c54e3d13c4409f4653ca482687b
   m_configObjects:

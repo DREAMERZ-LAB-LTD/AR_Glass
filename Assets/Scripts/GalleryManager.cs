@@ -9,6 +9,10 @@ public class GalleryManager : MonoBehaviour
 
     [SerializeField] List<GameObject> glassList;
     [SerializeField] GameObject corentGlass;
+    private void Start()
+    {
+        
+    }
     public void ChoiceGlass(int index) 
     {
         if(corentGlass != null)
