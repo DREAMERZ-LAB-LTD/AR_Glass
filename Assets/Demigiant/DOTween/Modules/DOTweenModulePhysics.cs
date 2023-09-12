@@ -59,7 +59,7 @@ namespace DG.Tweening
                 .SetOptions(AxisConstraint.Z, snapping).SetTarget(target);
         }
 
-        /// <summary>Tweens a Rigidbody's rotation to the given value.
+        /// <summary>Tweens a Rigidbody's currentRotation to the given value.
         /// Also stores the rigidbody as the tween's target so it can be used for filtered operations</summary>
         /// <param name="endValue">The end value to reach</param><param name="duration">The duration of the tween</param>
         /// <param name="mode">Rotation mode</param>
@@ -71,10 +71,10 @@ namespace DG.Tweening
             return t;
         }
 
-        /// <summary>Tweens a Rigidbody's rotation so that it will look towards the given position.
+        /// <summary>Tweens a Rigidbody's currentRotation so that it will look towards the given position.
         /// Also stores the rigidbody as the tween's target so it can be used for filtered operations</summary>
         /// <param name="towards">The position to look at</param><param name="duration">The duration of the tween</param>
-        /// <param name="axisConstraint">Eventual axis constraint for the rotation</param>
+        /// <param name="axisConstraint">Eventual axis constraint for the currentRotation</param>
         /// <param name="up">The vector that defines in which direction up is (default: Vector3.up)</param>
         public static Tweener DOLookAt(this Rigidbody target, Vector3 towards, float duration, AxisConstraint axisConstraint = AxisConstraint.None, Vector3? up = null)
         {

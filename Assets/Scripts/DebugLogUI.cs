@@ -2,42 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class DebugLogUI : MonoBehaviour
 {
-    [SerializeField] Text Fs_X, Fs_Y;
-    [SerializeField] Text F_X, F_Y;
-    [SerializeField] Text Ss_X, Ss_Y;
-    [SerializeField] Text S_X, S_Y;
-    [SerializeField] Text dostamce;
-    public void setFX(float value) 
+    [SerializeField] Slider rotationSlider, zoomSlider, maxZoom, minZoom;
+    [SerializeField] Text rotationText, zoomText, maxZoomText, minZoomText;
+    [SerializeField] ModelViwerControler controler;
+
+    public void SetUI(float rotation, float zoom, float maxZoomv, float minZoomv) 
     {
-        F_X.text = value.ToString();
+        rotationSlider.value = rotation;
+        zoomSlider.value = zoom;
+        rotationText.text = rotation.ToString();
+        zoomText.text = zoom.ToString();
+
+
+        maxZoom.value = maxZoomv;
+        minZoom.value = minZoomv;
+
+        minZoomText.text = minZoomv.ToString();
+        maxZoomText.text = maxZoomv.ToString();
+
     }
-    public void setFY(float value)
+    public void RotationValue() 
     {
-        F_Y.text = value.ToString();
+        rotationText.text = rotationSlider.value.ToString();
+        controler.RotateSencitivity(rotationSlider.value);
     }
-    public void setSX(float value)
+    public void ZoomValue()
     {
-        S_X.text = value.ToString();
+        zoomText.text = zoomSlider.value.ToString();
+        controler.ScaleSencitivity(zoomSlider.value);
     }
-    public void setSY(float value)
+    public void MinZoomValue() 
     {
-        S_Y.text = value.ToString();
+        minZoomText.text = minZoom.value.ToString();
+        //zoomSlider.minValue = minZoom.value;
+        controler.MinZoom(minZoom.value);
     }
-    public void SetFsXY(Vector2 value) 
+    public void MaxZoomValue() 
     {
-        Fs_X.text = value.x.ToString();
-        Fs_Y.text = value.y.ToString();
-    }
-    public void SetSsXY(Vector2 value) 
-    {
-        Ss_X.text = value.x.ToString();
-        Ss_Y.text = value.y.ToString();
-    }
-    public void SetZoom(float value) 
-    {
-        dostamce.text = value.ToString();
+        maxZoomText.text = maxZoom.value.ToString();
+        //zoomSlider.maxValue = maxZoom.value;
+        controler.MaxZoom(maxZoom.value);
     }
 }

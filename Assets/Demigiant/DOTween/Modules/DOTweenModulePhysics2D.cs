@@ -44,7 +44,7 @@ namespace DG.Tweening
                 .SetOptions(AxisConstraint.Y, snapping).SetTarget(target);
         }
 
-        /// <summary>Tweens a Rigidbody2D's rotation to the given value.
+        /// <summary>Tweens a Rigidbody2D's currentRotation to the given value.
         /// Also stores the Rigidbody2D as the tween's target so it can be used for filtered operations</summary>
         /// <param name="endValue">The end value to reach</param><param name="duration">The duration of the tween</param>
         public static Tweener DORotate(this Rigidbody2D target, float endValue, float duration)
