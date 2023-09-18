@@ -3414,7 +3414,7 @@ GameObject:
   - component: {fileID: 466432739}
   - component: {fileID: 466432740}
   m_Layer: 5
-  m_Name: Decription (1)
+  m_Name: Details
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3508,9 +3508,9 @@ MonoBehaviour:
   currentRotation: 0
   minRotation: 0
   maxRotation: 180
-  currentScale: 200
+  currentScale: 220
   minScale: 60
-  maxScale: 200
+  maxScale: 220
   button: {fileID: 1511716403}
   decription: {fileID: 466432736}
   time: 0.5
@@ -5044,6 +5044,8 @@ GameObject:
   - component: {fileID: 604070563}
   - component: {fileID: 604070565}
   - component: {fileID: 604070564}
+  - component: {fileID: 604070567}
+  - component: {fileID: 604070566}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -5109,6 +5111,76 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604070562}
   m_CullTransparentMesh: 1
+--- !u!114 &604070566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604070562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ba3ae9827edca42b43b8674c858f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glassMesh: {fileID: 940963351}
+  material: {fileID: 2100000, guid: 484078b3ab118d340a978a31fbebe415, type: 2}
+--- !u!114 &604070567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604070562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 604070564}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 604070566}
+        m_TargetAssemblyTypeName: ColorChanger, Assembly-CSharp
+        m_MethodName: Onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &609997977
 GameObject:
   m_ObjectHideFlags: 0
@@ -5241,7 +5313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: WERE
+  m_text: Wear
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7400270926eee714e97e965b997a421b, type: 2}
   m_sharedMaterial: {fileID: -4761968099704603515, guid: 7400270926eee714e97e965b997a421b, type: 2}
@@ -6763,7 +6835,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Soft squared acetate style with metal temple ka dndn a nd decoration.
+  m_text: The Virtue eyeglass is lightweight, durable, and comfortable to wear.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7400270926eee714e97e965b997a421b, type: 2}
   m_sharedMaterial: {fileID: -4761968099704603515, guid: 7400270926eee714e97e965b997a421b, type: 2}
@@ -7831,7 +7903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Best Selers
+  m_text: Best Sellers
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7400270926eee714e97e965b997a421b, type: 2}
   m_sharedMaterial: {fileID: -4761968099704603515, guid: 7400270926eee714e97e965b997a421b, type: 2}
@@ -7908,6 +7980,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937156592}
   m_CullTransparentMesh: 1
+--- !u!23 &940963351 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8220844232407257148, guid: 62315d4968735094eb5d62bdc345926a, type: 3}
+  m_PrefabInstance: {fileID: 1987135747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &957371331
 GameObject:
   m_ObjectHideFlags: 0
@@ -7966,7 +8043,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "sun galass description mandua;lndvhbv a;na;na'rv \na vrjavlnanvo;rai "
+  m_text: Made from high-quality acetate material, the rectangular-shaped eyeglass
+    is the epitome of sophistication.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7400270926eee714e97e965b997a421b, type: 2}
   m_sharedMaterial: {fileID: -4761968099704603515, guid: 7400270926eee714e97e965b997a421b, type: 2}
@@ -8157,6 +8235,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ModelViwerControler, Assembly-CSharp
         m_MethodName: SelectGlass
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1664169804}
+        m_TargetAssemblyTypeName: ColorChanger, Assembly-CSharp
+        m_MethodName: Onclick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10167,7 +10257,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -130}
-  m_SizeDelta: {x: 0, y: 100}
+  m_SizeDelta: {x: 0, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1171534640
 MonoBehaviour:
@@ -11024,7 +11114,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Detils
+  m_text: Details
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7400270926eee714e97e965b997a421b, type: 2}
   m_sharedMaterial: {fileID: -4761968099704603515, guid: 7400270926eee714e97e965b997a421b, type: 2}
@@ -13564,6 +13654,8 @@ GameObject:
   - component: {fileID: 1664169801}
   - component: {fileID: 1664169803}
   - component: {fileID: 1664169802}
+  - component: {fileID: 1664169805}
+  - component: {fileID: 1664169804}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -13629,6 +13721,76 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664169800}
   m_CullTransparentMesh: 1
+--- !u!114 &1664169804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664169800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ba3ae9827edca42b43b8674c858f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glassMesh: {fileID: 940963351}
+  material: {fileID: 2100000, guid: aab19eb1270e8c1439b7c7f41f242a49, type: 2}
+--- !u!114 &1664169805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664169800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1664169802}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1664169804}
+        m_TargetAssemblyTypeName: ColorChanger, Assembly-CSharp
+        m_MethodName: Onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1668006950
 GameObject:
   m_ObjectHideFlags: 0
@@ -13864,11 +14026,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentGlass: {fileID: 0}
   glasses:
-  - {fileID: 1031447354376556435, guid: a44fa1849454890499ea24caadf0bf24, type: 3}
+  - {fileID: 1381271279260760268, guid: a44fa1849454890499ea24caadf0bf24, type: 3}
   - {fileID: 5900412070638566473, guid: d48d89b991331b444bc4bfaa4b933e86, type: 3}
   - {fileID: 6795801623965672785, guid: 441810b9b273f2442b686e790aa4287d, type: 3}
   - {fileID: 566616123228859344, guid: 192f116ee434a534da6060fd7fa59ea9, type: 3}
   - {fileID: 9012791572700037573, guid: c3e5ba4692f31934cab552e3ab6d6eac, type: 3}
+  currentmat: {fileID: 0}
+  meshIndex: 0
 --- !u!4 &1672641997
 Transform:
   m_ObjectHideFlags: 0
@@ -13971,6 +14135,8 @@ GameObject:
   - component: {fileID: 1680694805}
   - component: {fileID: 1680694807}
   - component: {fileID: 1680694806}
+  - component: {fileID: 1680694809}
+  - component: {fileID: 1680694808}
   m_Layer: 5
   m_Name: Image (2)
   m_TagString: Untagged
@@ -14036,6 +14202,76 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680694804}
   m_CullTransparentMesh: 1
+--- !u!114 &1680694808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680694804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ba3ae9827edca42b43b8674c858f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glassMesh: {fileID: 940963351}
+  material: {fileID: 2100000, guid: 2cc2edcd6a9c8864f88da36a98968d37, type: 2}
+--- !u!114 &1680694809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680694804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1680694806}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1680694808}
+        m_TargetAssemblyTypeName: ColorChanger, Assembly-CSharp
+        m_MethodName: Onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1701433297
 GameObject:
   m_ObjectHideFlags: 0
@@ -16294,7 +16530,7 @@ PrefabInstance:
     - target: {fileID: 8220844232407257148, guid: 62315d4968735094eb5d62bdc345926a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2c31a96a2ad98fe4796e4bded7000896, type: 2}
+      objectReference: {fileID: 2100000, guid: aab19eb1270e8c1439b7c7f41f242a49, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -7,6 +7,10 @@ public class GlassSelectionManager : MonoBehaviour
 {
     [SerializeField] GameObject currentGlass;
     [SerializeField] List<GameObject> glasses;
+    [SerializeField] Material currentmat;
+    [SerializeField] string meshIndex;
+    public Material CurrentMat { set { currentmat = value; } get { return currentmat; } }
+    public string MeshName { set { meshIndex = value; } get { return meshIndex; } }
 
     public static GlassSelectionManager instance;
     private void Awake()
@@ -28,6 +32,7 @@ public class GlassSelectionManager : MonoBehaviour
         if (index < glasses.Count) 
         {
             currentGlass = glasses[index];
+            
         } 
     }
 

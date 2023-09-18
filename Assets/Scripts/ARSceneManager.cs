@@ -10,6 +10,16 @@ public class ARSceneManager : MonoBehaviour
     private void OnEnable()
     {
         GameObject glass = GlassSelectionManager.instance.GetCurrentGlass();
+        
+        MeshRenderer[] meshRenderers = glass.GetComponentsInChildren<MeshRenderer>();
+        foreach (MeshRenderer item in meshRenderers) 
+        {
+            if (item.name == GlassSelectionManager.instance.MeshName) 
+            {
+                item.material = GlassSelectionManager.instance.CurrentMat;
+            }
+        }
+
         if (glass != null) 
         {
             faceManager.facePrefab = glass;

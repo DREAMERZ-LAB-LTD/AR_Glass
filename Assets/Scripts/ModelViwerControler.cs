@@ -281,6 +281,9 @@ public class ModelViwerControler : MonoBehaviour
     }
     public void RemoveCount() 
     {
+        if (count_V <= 1)
+            return;
+
         count_V--;
         count.text = count_V.ToString();
         UpdatePice();
